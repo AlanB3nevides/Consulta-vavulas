@@ -9,3 +9,6 @@ TESTE: para testar no computador, use VS Code com a extensão Live Server e abra
 GITHUB PAGES: envie os seis arquivos para a mesma pasta do repositório e ative Pages nas configurações. Faça isso somente se houver autorização para publicar os endereços industriais; um repositório público deixa os dados acessíveis a qualquer pessoa. Se os dados forem sensíveis, mantenha o repositório privado ou use uma solução autorizada com controle de acesso.
 
 ATENCAO: os dados foram extraídos automaticamente e devem ser validados com o L5K/documentação antes de uso operacional. Campos vazios indicam ausência de valor no JSON, não necessariamente ausência física do sinal.
+
+
+Atualização: as páginas Rede AS-i e Rede I/O mostram somente válvulas com campos correspondentes preenchidos. Clique em uma linha para abrir detalhe.html, com desenho esquemático e endereços encontrados.
