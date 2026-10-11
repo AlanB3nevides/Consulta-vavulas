@@ -34,3 +34,65 @@ a{color:var(--accent)}
 @media(max-width:650px){.top{align-items:flex-start;flex-direction:column}.nav{margin-left:0}.hero,.panel,.stat,.cardlink{padding:17px}main{padding-top:18px}}
 
 .clickable-row{cursor:pointer}.clickable-row:focus td{outline:2px solid var(--accent);outline-offset:-2px}.tag{font-weight:800;color:var(--accent)}.diagram{background:#0b141e;border:1px solid var(--line);border-radius:12px;padding:16px;margin:16px 0}.diagram svg{display:block;width:100%;max-height:280px}.address-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.address-card{background:#14202c;border:1px solid var(--line);border-radius:10px;padding:14px;min-width:0}.address-card strong{display:block;color:var(--accent);margin-bottom:6px}.address-card code{display:block;overflow-wrap:anywhere;white-space:normal}.backlink{display:inline-block;margin:0 0 16px;text-decoration:none}.detail-title{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ===== v2: responsividade / celular ===== */
+html{-webkit-text-size-adjust:100%}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}
+.tablewrap table{min-width:900px}
+.empty{color:var(--muted);text-align:center;padding:22px 12px}
+.count{color:var(--muted);font-size:14px;margin:0 0 12px}
+.notice{color:var(--muted);font-size:14px;border-left:3px solid var(--accent2);padding:8px 12px;background:#0b141e;border-radius:8px}
+.address-card.is-empty code{color:var(--muted);background:transparent;padding:0;font-style:italic}
+.address-card code{font-size:14px}
+.vcards{display:none}
+.totop{position:fixed;right:14px;bottom:16px;z-index:20;min-height:44px;padding:0 16px;border-radius:22px;background:#173b3a;box-shadow:0 6px 18px #0008;font-weight:700}
+.totop[hidden]{display:none}
+
+@media(max-width:760px){
+  body{font-size:16px}
+  .top{min-height:0;padding:12px 14px;gap:10px;align-items:stretch}
+  .brand{font-size:17px}
+  .nav{margin-left:0;width:100%;flex-wrap:nowrap;gap:6px}
+  .nav a{flex:1;text-align:center;min-height:44px;display:flex;align-items:center;justify-content:center;padding:6px 8px;font-size:15px}
+  main{padding:14px 12px}
+  .hero,.panel,.stat,.cardlink{padding:16px;border-radius:13px}
+  .hero{margin-bottom:12px}
+  h1{font-size:23px;margin-bottom:8px}
+  .hero p{font-size:14px;margin:0 0 10px}
+  .cardlink{min-height:48px}
+  .cardlink h2{font-size:20px}
+  footer{padding:14px}
+
+  .toolbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:12px 0}
+  .toolbar input{grid-column:1/-1;min-width:0;width:100%}
+  .toolbar input,.toolbar select,.toolbar button{min-height:48px;font-size:16px}
+  .toolbar select{min-width:0;width:100%}
+  .toolbar button{padding:0 20px}
+
+  .tablewrap{display:none}
+  .vcards{display:grid;grid-template-columns:1fr;gap:10px}
+  .vcard{display:block;text-decoration:none;color:var(--text);background:linear-gradient(145deg,#172636,#111b26);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:12px;padding:12px 14px;-webkit-tap-highlight-color:#42d3b222}
+  .vcard:active{background:#173b3a;border-color:#317c73}
+  .vcard:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .vcard-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;min-height:32px}
+  .vcard .tag{font-size:20px;letter-spacing:.2px}
+  .vcard .chev{color:var(--accent);font-size:26px;line-height:1}
+  .vcard-body{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+  .vf{grid-column:1/-1;min-width:0}
+  .vf.half{grid-column:span 1}
+  .vf dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin:0 0 1px}
+  .vf dd{margin:0;font:14.5px/1.35 ui-monospace,SFMono-Regular,Consolas,monospace;color:#d7f5ee;overflow-wrap:anywhere}
+
+  .backlink{display:inline-flex;align-items:center;min-height:44px;font-size:16px}
+  .detail-title h1{font-size:24px}
+  .diagram{padding:8px;margin:12px 0}
+  .diagram svg{max-height:none}
+  .address-grid{grid-template-columns:1fr;gap:10px}
+  .address-card{padding:12px 14px}
+  .address-card strong{font-size:13px;text-transform:uppercase;letter-spacing:.4px}
+  .address-card code{font-size:16px;line-height:1.35}
+  .panel h2{font-size:18px}
+}
+@media(max-width:360px){.nav a{font-size:14px}.vcard .tag{font-size:18px}.hero p{font-size:13px}}
+@media(min-width:520px) and (max-width:760px){.vcards{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.hero .lead{display:none}.notice{font-size:13px;padding:7px 10px}.hero{padding:14px}}

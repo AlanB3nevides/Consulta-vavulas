@@ -12,3 +12,9 @@ ATENCAO: os dados foram extraídos automaticamente e devem ser validados com o L
 
 
 Atualização: as páginas Rede AS-i e Rede I/O mostram somente válvulas com campos correspondentes preenchidos. Clique em uma linha para abrir detalhe.html, com desenho esquemático e endereços encontrados.
+
+
+Atualização v2 (versão para celular):
+- Em telas até 760 px (celulares), as páginas Rede AS-i e Rede I/O mostram cartões em vez de tabela; no computador a tabela continua igual.
+- Arquivos alterados: styles.css, app.js, detalhe.js, index.html, rede-asi.html, rede-io.html, detalhe.html. valvulas.json não foi alterado.
+- Todos os arquivos ficam na mesma pasta (caminhos relativos, compatível com GitHub Pages).
