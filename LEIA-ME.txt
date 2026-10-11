@@ -1,0 +1,11 @@
+CONSULTA DE VALVULAS - VERSAO JSON
+
+Arquivos: index.html, rede-asi.html, rede-io.html, styles.css, app.js e valvulas.json.
+
+O site agora carrega automaticamente os dados de valvulas.json; não é necessário escolher o arquivo L5K no navegador.
+
+TESTE: para testar no computador, use VS Code com a extensão Live Server e abra index.html pelo servidor. Abrir diretamente como file:// pode bloquear o carregamento do JSON.
+
+GITHUB PAGES: envie os seis arquivos para a mesma pasta do repositório e ative Pages nas configurações. Faça isso somente se houver autorização para publicar os endereços industriais; um repositório público deixa os dados acessíveis a qualquer pessoa. Se os dados forem sensíveis, mantenha o repositório privado ou use uma solução autorizada com controle de acesso.
+
+ATENCAO: os dados foram extraídos automaticamente e devem ser validados com o L5K/documentação antes de uso operacional. Campos vazios indicam ausência de valor no JSON, não necessariamente ausência física do sinal.
